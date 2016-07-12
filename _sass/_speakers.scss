@@ -1,0 +1,74 @@
+
+/*
+* Speakers
+*/
+.speakers {
+    background: #7474BF; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #7474BF , #348AC7); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #7474BF , #348AC7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding-top: 8rem;
+    color: rgb(255,255,255);
+    display: block;
+}
+.flex-joinUs,
+.flex-speakers {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 2rem 0 2rem 0;
+    position: relative;
+    justify-content: center;
+}
+.joinUs,
+.speaker {
+    padding: 1.5rem;
+    flex-basis: 385px;
+}
+.speaker {
+    text-align: center;
+}
+.speaker p {
+    text-align: left;
+}
+.speakerImg {
+    max-width: 100px;
+    margin: 0 auto;
+}
+.speakerName {
+    color: #1E5E99;
+}
+.org {
+    background: #EC6F66; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #EC6F66 , #F3A183); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #EC6F66 , #F3A183); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.sponsorList {
+    padding: 2rem;
+}
+.sponsor {
+    padding: 2rem;
+}
+.sponsorLogo {
+    max-height: 60px;
+    margin: 0 auto;
+}
+.okfn {
+    //width: 300px;
+}
+.medialab {
+    width: 100px;
+}
+.mapText {
+    position: relative;
+}
+.footer {
+    padding-top: 6rem;
+}
+.contact {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.staticMap {
+    position: absolute;
+}

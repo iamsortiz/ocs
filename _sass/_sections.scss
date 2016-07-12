@@ -1,0 +1,64 @@
+
+/*
+* Sections
+*/
+.text-center {
+    text-align: center;
+}
+.intro {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url(/img/retiro.jpg) no-repeat bottom center scroll;
+    background-position: bottom;
+    background-size: cover;
+    color: rgb(255,255,255);
+}
+.introHeadline {
+    font-weight: 700;
+    font-size: 3rem;
+    padding-top: 2rem;
+    line-height: 1.1;
+    text-shadow: 0px 2px 15px rgba(0,0,0,0.8);
+}
+.introCopy {
+    font-size: 4rem;
+    text-shadow: 0px 2px 15px rgba(0,0,0,0.8);
+}
+.introCredit {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 1rem;
+}
+.btn {
+    transition: 0.2s
+}
+.btn:hover {
+    transform: translateY(2px);
+}
+.summary {
+    background: #ECE9E6; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #ECE9E6 , #FFFFFF); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #ECE9E6 , #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.text {
+    font-size: 2rem;
+}
+.odc {
+    width: 100%;
+}
+.summaryDesc {
+    color: rgb(111, 124, 130);
+    border-bottom: 1px solid rgba(220,220,220,0.5);
+}
+.summaryList {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1.2rem;
+}
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
