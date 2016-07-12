@@ -13,6 +13,11 @@ h4 {
     color: rgb(255,255,255);
     display: block;
 }
+.call {
+    background: -webkit-linear-gradient(to left, #00b9f2 , #0077b9);
+    background: linear-gradient(to left, #00b9f2 , #0077b9/*F3A183*/);
+    color: white;
+}
 .scheduleDay {
     font-weight: 500;
     margin-top: 4rem;
