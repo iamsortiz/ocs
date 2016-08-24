@@ -11,7 +11,7 @@ email: opencitiessummit@medialab-prado.es
 description: > # this means to ignore newlines until "baseurl:"
   Cities open to citizen innovation. Open Data is a source for knowledge and decision making. How should a city structure teams to ensure that the publication of datasets is compliant with technical and legal frameworks?
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://http://opencitiessummit.org/" # the base hostname & protocol for your site
+url: "http://opencitiessummit.org/" # the base hostname & protocol for your site
 twitter_username: citiesopen
 github_username:  medialab-prado
 
