@@ -1,3 +1,7 @@
+{% assign locale = page.url | slugify %}
+
+
+
 <section id="contact">
     <div class="row">
         <div class="contact">
@@ -6,15 +10,15 @@
                 <img class="staticMap" src='https://api.mapbox.com/styles/v1/mapbox/dark-v8/static/-3.668381,40.408836,13/1250x150@2x?access_token=pk.eyJ1IjoibWFydGluZ256IiwiYSI6ImNpbGd2cG5tMTAwNWV3OGx6MHg1MmltYnQifQ.A6Fvtb7Sk_okvco9kuDziA' alt='Medialab-Prado'>
             </noscript>
             <div class="mapText col-md-4 col-center text-center u-white">
-                <h2 class="p-t-1">Contact</h2>
+                <h2 class="p-t-1">{{ site.data.lang.[locale].footer.contact }}</h2>
                 <hr class="separator--inverse">
-                <p>You can reach us by <a class="link--inverse" href="mailto:opencitiessummit@medialab-prado.es">mail</a>, <a class="link--inverse" href="https://twitter.com/citiesopen">Twitter</a> o <a class="link--inverse" href="#">Facebook</a>.</p>
+                <p>{{ site.data.lang.[locale].footer.reach_us }} <a class="link--inverse" href="mailto:opencitiessummit@medialab-prado.es">mail</a>, <a class="link--inverse" href="https://twitter.com/citiesopen">Twitter</a> o <a class="link--inverse" href="#">Facebook</a>.</p>
                 <footer class="footer p-b-2">
                     <p class="m-0"><i class="fa
                     fa-creative-commons"></i>
                     Medialab-Prado (Madrid), Spain, 2016.</p>
                     <p class="m-0"><a class="link--inverse"
-                    href="https://github.com/medialab-prado/opencitiessummit">Source code</a>.</p>
+                    href="https://github.com/medialab-prado/opencitiessummit">{{ site.data.lang.[locale].footer.source_code }}</a>.</p>
                 </footer>
             </div>
         </div>

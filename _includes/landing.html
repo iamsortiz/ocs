@@ -1,6 +1,7 @@
----
-layout: default
----
+{% assign locale = page.url | slugify %}
+
+
+
 <section id="cover">
     <div class="row">
         <div class="intro">
@@ -26,23 +27,23 @@ layout: default
                     <img class="img-responsive center-block m-b-2 visible-xs" src="img/logo-mobile.svg" alt="Banner Open Cities Summit 2016, Madrid, October 5th, 2016"/>
                 </noscript>
 
-                <p class="text text-center"><a href="/" class="link"> {{ site.data.lang.en.en0 }} </a>.</p>
-                <p class=""> {{ site.data.lang.en.en1 }} <a href="http://medialab-prado.es" >Medialab-Prado</a>. </p>
-                <p class="introCite">"Open data secures space for citizen-driven development and greater collaboration between officials and outside actors. This can build open cities that adapt to meet the needs of their communities and businesses, rather than imposing top-down structures and solutions". <span>International Open Data Conference Roadmap 2015</span></p>
+                <p class="text text-center"><a href="/" class="link"> {{ site.data.lang.[locale].text0 }} </a>.</p>
+                <p class=""> {{ site.data.lang.[locale].text1 }} <a href="http://medialab-prado.es" >Medialab-Prado</a>. </p>
+                <p class="introCite">{{ site.data.lang.[locale].text2 }} <span>International Open Data Conference Roadmap 2015</span></p>
 
                 <h3 class="m-t-2">The OCS will aim to:</h3>
-                <p class="summaryDesc m-b-1">Highlight how open data is being used around the world to improve the lives of citizens at the city level</p>
-                <p class="summaryDesc m-b-1">Facilitate knowledge exchange around open cities</p>
-                <p class="summaryDesc m-b-1">Ideate solutions to overcome identified challenges in creating open cities</p>
+                <p class="summaryDesc m-b-1">{{ site.data.lang.[locale].text3 }}</p>
+                <p class="summaryDesc m-b-1">{{ site.data.lang.[locale].text4 }}</p>
+                <p class="summaryDesc m-b-1">{{ site.data.lang.[locale].text5 }}</p>
 
                 <h3 class="m-t-2">The OCS will bring together:</h3>
-                <p class="summaryDesc m-b-1">Civil servants in charge of Open Data policies;</p>
-                <p class="summaryDesc m-b-1">CSOs and NGOs working with data at the local / city level</p>
-                <p class="summaryDesc m-b-1">CSOs that don’t yet work with data but want to learn how they can use data to improve the impact of the work they do at a local level</p>
-                <p class="summaryDesc m-b-1">Data journalists</p>
-                <p class="summaryDesc m-b-1">SMEs working in the field of Smart Cities, E-Government</p>
-                <p class="summaryDesc m-b-1">Researchers interested in Open Data and Public Sector Innovation</p>
-                <p class="summaryDesc m-b-1">Anyone who is passionate about using data and open principles to create positive change at the city level</p>
+                <p class="summaryDesc m-b-1">{{ site.data.lang.[locale].text6 }}</p>
+                <p class="summaryDesc m-b-1">{{ site.data.lang.[locale].text7 }}</p>
+                <p class="summaryDesc m-b-1">{{ site.data.lang.[locale].text8 }}</p>
+                <p class="summaryDesc m-b-1">{{ site.data.lang.[locale].text9 }}</p>
+                <p class="summaryDesc m-b-1">{{ site.data.lang.[locale].text10 }}</p>
+                <p class="summaryDesc m-b-1">{{ site.data.lang.[locale].text11 }}</p>
+                <p class="summaryDesc m-b-1">{{ site.data.lang.[locale].text12 }}</p>
             </div>
         </div>
     </div>
@@ -55,16 +56,16 @@ layout: default
 
             <hr class="separator">
 
-            <p class="text-center">The summit will be structured in three parts</p>
+            <p class="text-center">{{ site.data.lang.[locale].text13 }}</p>
 
             <h3>Firstly</h3>
-            <p class="text-left">Firstly, the summit will be opening a call for posters and city managers from all over the world will be able to tell how their open data policies are helping to improve the lives of citizens.</p>
+            <p class="text-left">{{ site.data.lang.[locale].text14 }}</p>
 
             <h3>Secondly</h3>
-            <p class="text-left">Secondly, participants in the summit will be working in groups to ideate solutions to overcome four different challenges identified in the implementation of an open data policy at a city level: managing an open data policy, improving urban planning, mitigating climate change, and improving city competitiveness.</p>
+            <p class="text-left">{{ site.data.lang.[locale].text15 }}</p>
 
             <h3>Finally</h3>
-            <p class="text-left">Finally, there will be open space to discuss the challenges and opportunities of creating an open city.</p>
+            <p class="text-left">{{ site.data.lang.[locale].text16 }}</p>
         </div>
     </div>
 </section>
@@ -79,25 +80,24 @@ layout: default
       <div class="joinUs one">
           <i class="fa fa-unlock fa-3x"></i>
           <h3>Management of an Open Data Policy</h3>
-          <p class="text-left">Open Data is a source for knowledge and decision making. How should a city structure teams to ensure that the publication of datasets is compliant with technical and legal frameworks?</p>
+          <p class="text-left">{{ site.data.lang.[locale].text17 }}</p>
       </div>
 
       <div class="joinUs two">
           <i class="fa fa-map-o fa-3x"></i>
           <h3>Urban Planning</h3>
-          <p class="text-left">
-        Open Data, especially geospatial data, is very useful to understand trends in urban planning. How can a city open and link data sources to improve urban planning? How can open data help in the definition of new solution for common / urban problems?</p>
+          <p class="text-left">{{ site.data.lang.[locale].text18 }}</p>
       </div>
 
       <div class="joinUs three">
           <i class="fa fa-bicycle fa-3x"></i>
           <h3>Environment</h3>
-          <p class="text-left">Open Data can be an important tool to fight against climate change. How can a city use open data to monitor and mitigate environmental related issues, such as pollution?</p>
+          <p class="text-left">{{ site.data.lang.[locale].text19 }}</p>
       </div>
       <div class="joinUs four">
           <i class="fa fa-line-chart fa-3x"></i>
           <h3>Competitiveness</h3>
-          <p class="text-left">Open Data can be a source for new businesses and social projects that enhance competitiveness in a city. How can a city use open data to generate a vibrant ecosystem capable of developing new jobs and solutions for the city? How should open cities link into other broader discussions, e.g. Smart cities, Entrepreneurship?</p>
+          <p class="text-left">{{ site.data.lang.[locale].text20 }}</p>
       </div>
         </div>
     </div>
@@ -136,7 +136,7 @@ layout: default
                 roundTable"></span> Round Table</h4>
                 <h4 class="scheduleLegend"><span class="circle barcamp"></span> Unconference</h4>
               </div>
-                <p class="text-center">Auditorium, Cantina and Backyard are the spaces in the same building, Medialab-Prado.</p>
+                <p class="text-center">{{ site.data.lang.[locale].text21 }}</p>
 
               <header class="scheduleDay m-b-1">Wednesday October 5th, 2016</header>
               <div class="row">
@@ -178,7 +178,7 @@ layout: default
                     <time class="col-xs-12 col-md-2">13.00 — 14.00</time>
                     <div class="col-xs-12 col-md-10">
                         <h4 class="m-t-0"><i>Lunch</i> 🍔🍕🍉</h4>
-                        <p>Cantina and Backyard</p>
+                        <p>{{ site.data.lang.[locale].text22 }}</p>
                     </div>
                 </div>
 
@@ -190,7 +190,7 @@ layout: default
                     <time class="col-xs-12 col-md-2">14.00 — 17.00</time>
                     <div class="col-xs-12 col-md-10">
                         <h4 class="m-t-0">Ideathon: Unconference <span class="circle roundTable"></h4>
-                        <p>Participants work in groups to find innovative solutions to highlighted challenges. Ideas to be captured in a presentation. Each group is moderated by an expert.</p>
+                        <p>{{ site.data.lang.[locale].text23 }}</p>
                     </div>
 
                 </div>
@@ -198,7 +198,7 @@ layout: default
                     <time class="col-xs-12 col-md-2">17.00 — 18.00</time>
                     <div class="col-xs-12 col-md-10">
                         <h4 class="m-t-0">Medialab-Prado Visualizar'16 Presentations <span class="circle poster"></span></h4>
-                        <p>Public presentation of the eight projects developed along Visualizar'16 international workshop at Medialab-Prado (26 September - 4 October)</p>
+                        <p>{{ site.data.lang.[locale].text24 }}</p>
                     </div>
                 </div>
                 <div class="row timeSlot">
@@ -233,7 +233,7 @@ layout: default
                 <img class="img-responsive img-circle speakerImg" src="img/speakers/katie_clancy.jpeg" alt="Katie Clancy">
             </noscript>
             <h3 class="speakerName"><a href="http://twitter.com/LandofKatie" class="link">Katie Clancy</a></h3>
-            <p>Project Management Officer, Open Data for Development program at International Development Research Centre (IDRC)</p>
+            <p>{{ site.data.lang.[locale].text25 }}</p>
         </div>
         <div class="speaker two">
             <img class="img-responsive img-circle speakerImg lazy" data-src="img/speakers/fernando_perini.jpeg" alt="Fernando Perini">
@@ -241,7 +241,7 @@ layout: default
                 <img class="img-responsive img-circle speakerImg" src="img/speakers/fernando_perini.jpeg" alt="Fernando Perini">
             </noscript>
             <h3 class="speakerName"><a href="https://twitter.com/fperini" class="link">Fernando Perini</a></h3>
-            <p>Program Officer at IDRC, Fernando Perini is involved in the development of policy-oriented research projects that aim to understanding of how information networks positively and negatively affect developing countries’ citizens.</p>
+            <p>{{ site.data.lang.[locale].text26 }}</p>
         </div>
         <div class="speaker three">
             <img class="img-responsive img-circle speakerImg lazy" data-src="img/speakers/victoria_anderica.jpeg" alt="Victoria Anderica">
@@ -249,7 +249,7 @@ layout: default
                 <img class="img-responsive img-circle speakerImg" src="img/speakers/victoria_anderica.jpeg" alt="Victoria Anderica">
             </noscript>
             <h3 class="speakerName"><a href="https://twitter.com/vickyande" class="link">Victoria Anderica Caffarena</a></h3>
-            <p>Directora del Proyecto de Transparencia en Ayuntamiento de Madrid que se impulsa desde el Área de Gobienro de Participacipación Ciudadana, Transparencia y Gobierno Abierto.</p>
+            <p>{{ site.data.lang.[locale].text27 }}</p>
         </div>
         <div class="speaker four">
             <img class="img-responsive img-circle speakerImg lazy" data-src="img/speakers/antonio_moneo.jpg" alt="Antonio Moneo">
@@ -257,7 +257,7 @@ layout: default
                 <img class="img-responsive img-circle speakerImg" src="img/speakers/antonio_moneo.jpg" alt="Antonio Moneo">
             </noscript>
             <h3 class="speakerName"><a href="https://twitter.com/antoniomoneo" class="link">Antonio Moneo</a></h3>
-            <p>Antonio works at the Inter-American Development Bank promoting open data as a collaborative tool for governments, citizens, entrepreneurs and universities to solve developmental challenges. He is currently a Learning and Knowledge Management Senior Associate at the IDB. Learning and Knowledge Management Senior Associate en Inter-American Development Bank, Open Data and Crowdsourced Innovation Consultant</p>
+            <p>{{ site.data.lang.[locale].text28 }}</p>
         </div>
         <div class="speaker five">
             <img class="img-responsive img-circle speakerImg lazy" data-src="img/speakers/katelyn_rogers.jpeg" alt="Katelyn Rogers">
@@ -265,7 +265,7 @@ layout: default
                 <img class="img-responsive img-circle speakerImg" src="img/speakers/katelyn_rogers.jpeg" alt="Katelyn Rogers">
             </noscript>
             <h3 class="speakerName"><a href="https://twitter.com/kayhuit" class="link">Katelyn Rogers</a></h3>
-            <p>Katelyn is the Working Groups Community Manager at Open Knowledge International. She holds a BA in Philosophy and French from UCLA and an MSc in Public Policy and Management from KCL where she wrote her dissertation on open government data policies in the Global South.</p>
+            <p>{{ site.data.lang.[locale].text29 }}</p>
         </div>
         <div class="speaker six">
             <img class="img-responsive img-circle speakerImg lazy" data-src="img/speakers/francois_van_schalkwyk.jpg" alt="François Van Schalkwyk">
@@ -273,7 +273,7 @@ layout: default
                 <img class="img-responsive img-circle speakerImg" src="img/speakers/francois_van_schalkwyk.jpg" alt="François Van Schalkwyk">
             </noscript>
             <h3 class="speakerName"><a href="https://twitter.com/francois_fvs2" class="link">François Van Schalkwyk</a></h3>
-            <p>Independent researcher and consultant in the fields of higher education studies, open data and scholarly communication. World Wide Web Foundation Open Data Research Manager for Africa + CHET researcher + PhD candidate in Science Communication + African Minds Trustee.</p>
+            <p>{{ site.data.lang.[locale].text30 }}</p>
         </div>
     </div>
 </section>
@@ -286,7 +286,7 @@ layout: default
 
                 <hr class="separator--inverse">
 
-                <p>We encourage to submit posters for the Open Cities Summit, please share with us the shape of Open City to come.</p>
+                <p>{{ site.data.lang.[locale].text31 }}</p>
                 <embed src="https://docs.google.com/forms/d/1NER8J7TrnScLIkUIq-WaXn56otf7AEtZvsFfnPkj4GU/viewform" width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0"></embed>
             </div>
         </div>
@@ -377,7 +377,7 @@ layout: default
             </div>
         </div>
 
-        <p class="">If you want to join us please send us an <a href="#contact">email</a></p>
+        <p class="">{{ site.data.lang.[locale].text32 }}<a href="#contact">email</a></p>
         </div>
         </div>
         </div>
